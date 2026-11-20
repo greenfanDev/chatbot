@@ -2,7 +2,7 @@ import streamlit as st
 import os
  
 st.write("LLM_BASE_URL", st.secrets["colab_url"])
-st.write("GROQ_APR_KEY", st.secrets["groq_api_key"])
+#st.write("GROQ_APR_KEY", st.secrets["groq_api_key"])
  
 # Point to Colab tunnel URL for custom fine-tuned model, or Groq API as default/fallback
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
